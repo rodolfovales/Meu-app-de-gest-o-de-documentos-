@@ -1,7 +1,8 @@
 package com.gestaofrotas
 
+import android.content.Intent
 import android.os.Bundle
-import android.widget.TextView
+import android.widget.Button
 import androidx.appcompat.app.AppCompatActivity
 
 class TelaEmpresa : AppCompatActivity() {
@@ -9,7 +10,8 @@ class TelaEmpresa : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.tela_empresa)
 
-        val cnpj = intent.getStringExtra("cnpjUsuario") ?: ""
-        findViewById<TextView>(R.id.titulo_empresa).text = "🏢 Área da Empresa — CNPJ: $cnpj"
+        findViewById<Button>(R.id.botao_cadastrar).setOnClickListener {
+            startActivity(Intent(this, CadastroEmpresa::class.java))
+        }
     }
 }

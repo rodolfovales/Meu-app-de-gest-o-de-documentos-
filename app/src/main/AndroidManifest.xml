@@ -6,7 +6,7 @@
     <application
         android:label="Gestão Documentos Frotas"
         android:icon="@mipmap/ic_launcher">
-        <activity android:name=".MainActivity" android:exported="true">
+        <activity android:name=".TelaLogin" android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.LAUNCHER" />

@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F5F5F5">
+
+    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+        android:orientation="vertical" android:padding="16dp">
+
+        <!-- Cabeçalho -->
+        <TextView android:id="@+id/detalhe_nome" android:layout_width="match_parent"
+            android:layout_height="wrap_content" android:textSize="20sp" android:textStyle="bold"
+            android:padding="14dp" android:background="#1976D2" android:textColor="#FFFFFF"/>
+        <TextView android:id="@+id/detalhe_cnpj" android:layout_width="match_parent"
+            android:layout_height="wrap_content" android:textSize="14sp" android:padding="8dp"
+            android:textColor="#555555" android:background="#FFFFFF"/>
+
+        <!-- Status -->
+        <TextView android:id="@+id/status_atual" android:layout_width="match_parent"
+            android:layout_height="wrap_content" android:text="📋 PENDENTE DE ANÁLISE"
+            android:textSize="16sp" android:textStyle="bold" android:padding="12dp"
+            android:layout_marginTop="12dp" android:background="#FFF3E0" android:textColor="#E65100"
+            android:gravity="center"/>
+
+        <!-- Documentos -->
+        <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:text="📄 Documentos Recebidos" android:textSize="15sp" android:textStyle="bold"
+            android:padding="12dp" android:layout_marginTop="16dp"/>
+
+        <Button android:id="@+id/doc1" android:layout_width="match_parent" android:layout_height="48dp"
+            android:layout_marginVertical="2dp" android:text="Cartão CNPJ" android:background="#E8F5E9"/>
+        <Button android:id="@+id/doc2" android:layout_width="match_parent" android:layout_height="48dp"
+            android:layout_marginVertical="2dp" android:text="Contrato Social" android:background="#E8F5E9"/>
+        <Button android:id="@+id/doc3" android:layout_width="match_parent" android:layout_height="48dp"
+            android:layout_marginVertical="2dp" android:text="Documento dos Sócios" android:background="#E8F5E9"/>
+        <Button android:id="@+id/doc4" android:layout_width="match_parent" android:layout_height="48dp"
+            android:layout_marginVertical="2dp" android:text="Comprovante de Endereço" android:background="#E8F5E9"/>
+        <Button android:id="@+id/doc5" android:layout_width="match_parent" android:layout_height="48dp"
+            android:layout_marginVertical="2dp" android:text="Faturamento 12 Meses" android:background="#E8F5E9"/>
+
+        <!-- Comentário de Análise -->
+        <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:text="💬 Comentário Interno" android:textSize="15sp" android:textStyle="bold"
+            android:padding="12dp" android:layout_marginTop="16dp"/>
+        <EditText android:id="@+id/campo_comentario" android:layout_width="match_parent"
+            android:layout_height="100dp" android:hint="Escreva observações sobre a análise..."
+            android:padding="12dp" android:background="#FFFFFF" android:gravity="top"/>
+        <Button android:id="@+id/botao_salvar_comentario" android:layout_width="match_parent"
+            android:layout_height="48dp" android:text="💾 SALVAR COMENTÁRIO"
+            android:background="#607D8B" android:textColor="#FFFFFF" android:layout_marginTop="8dp"/>
+
+        <!-- Botões Aprovar/Rejeitar -->
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:orientation="horizontal" android:layout_marginTop="20dp" android:gap="8dp">
+            <Button android:id="@+id/botao_aprovado" android:layout_width="0dp"
+                android:layout_height="56dp" android:layout_weight="1" android:text="✅ APROVAR"
+                android:background="#2E7D32" android:textColor="#FFFFFF" android:textSize="15sp"/>
+            <Button android:id="@+id/botao_rejeitado" android:layout_width="0dp"
+                android:layout_height="56dp" android:layout_weight="1" android:text="❌ REJEITAR"
+                android:background="#C62828" android:textColor="#FFFFFF" android:textSize="15sp"/>
+        </LinearLayout>
+
+    </LinearLayout>
+</ScrollView>

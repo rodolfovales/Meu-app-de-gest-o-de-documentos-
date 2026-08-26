@@ -26,7 +26,7 @@ class PainelMaster : AppCompatActivity() {
         val adaptador = AdaptadorEmpresa()
         lista.adapter = adaptador
 
-        lista.onItemClickListener = { _, _, posicao, _ ->
+        lista.onItemClickListener = AdapterView.OnItemClickListener { _, _, posicao, _ ->
             val emp = empresas[posicao]
             val intent = Intent(this, DetalhesEmpresa::class.java)
             intent.putExtra("cnpj", emp.cnpj)

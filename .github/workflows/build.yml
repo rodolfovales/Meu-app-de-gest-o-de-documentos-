@@ -1,0 +1,31 @@
+name: Build App
+on:
+  push:
+    branches: [ main ]
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Baixar Código
+        uses: actions/checkout@v4
+
+      - name: Configurar Java
+        uses: actions/setup-java@v4
+        with:
+          java-version: '17'
+          distribution: 'temurin'
+
+      - name: Dar Permissões
+        run: chmod +x gradlew
+
+      - name: Gerar Arquivo .apk
+        run: ./gradlew assembleDebug
+
+      - name: Baixar o App
+        uses: actions/upload-artifact@v4
+        with:
+          name: GestaoDocumentosFrotas
+          path: app/build/outputs/apk/debug/app-debug.apk
+          

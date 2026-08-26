@@ -3,24 +3,40 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:padding="16dp"
     android:background="#F5F5F5">
 
-    <TextView
-        android:id="@+id/titulo_master"
+    <!-- Cabeçalho -->
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:textSize="22sp"
-        android:textStyle="bold"
+        android:orientation="vertical"
         android:padding="16dp"
-        android:background="#1976D2"
-        android:textColor="#FFFFFF"/>
+        android:background="#1565C0">
 
-    <TextView
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="🔐 Painel Master"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            android:textColor="#FFFFFF"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Acompanhamento de Documentos"
+            android:textSize="14sp"
+            android:textColor="#E3F2FD"
+            android:layout_marginTop="4dp"/>
+    </LinearLayout>
+
+    <!-- Lista de Empresas -->
+    <ListView
+        android:id="@+id/lista_empresas"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="📋 Lista de empresas e documentos aparecerá aqui"
-        android:padding="16dp"
-        android:textSize="16sp"/>
+        android:layout_height="match_parent"
+        android:divider="#E0E0E0"
+        android:dividerHeight="1dp"
+        android:padding="8dp"/>
 
 </LinearLayout>

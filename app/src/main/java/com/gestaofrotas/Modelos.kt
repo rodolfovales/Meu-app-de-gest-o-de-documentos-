@@ -1,20 +1,35 @@
 package com.gestaofrotas
 
+import androidx.room.Entity
+import androidx.room.PrimaryKey
+
+@Entity
 data class Empresa(
-    val cnpj: String,
+    @PrimaryKey val cnpj: String,
     val razaoSocial: String,
     val responsavel: String,
     val telefone: String,
-    val email: String
+    val email: String,
+    val dataCadastro: Long = System.currentTimeMillis()
 )
 
+@Entity
 data class Documento(
-    val id: Int,
+    @PrimaryKey val id: Int? = null,
     val cnpjEmpresa: String,
     val tipo: String,
     val nomeArquivo: String,
+    val caminhoArquivo: String = "",
     val status: String = "PENDENTE",
-    val comentario: String = ""
+    val comentario: String = "",
+    val dataEnvio: Long = System.currentTimeMillis()
+)
+
+@Entity
+data class Usuario(
+    @PrimaryKey val email: String,
+    val senha: String,
+    val tipo: String // MASTER / EMPRESA
 )
 
 val DOCUMENTOS_OBRIGATORIOS = listOf(

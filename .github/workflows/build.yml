@@ -17,11 +17,17 @@ jobs:
           java-version: '17'
           distribution: 'temurin'
 
+      - name: Baixar Gradle Wrapper
+        run: |
+          curl -L -o gradle/wrapper/gradle-wrapper.jar https://raw.githubusercontent.com/gradle/gradle/v8.2.0/gradle/wrapper/gradle-wrapper.jar
+
       - name: Dar Permissões
-        run: chmod +x gradlew
+        run: |
+          chmod +x gradlew
+          ls -la
 
       - name: Gerar Arquivo .apk
-        run: ./gradlew assembleDebug
+        run: ./gradlew assembleDebug --stacktrace
 
       - name: Baixar o App
         uses: actions/upload-artifact@v4

@@ -55,12 +55,26 @@
     android:orientation="horizontal"
     android:layout_marginTop="20dp">
             
-            <Button android:id="@+id/botao_aprovado" android:layout_width="0dp"
-                android:layout_height="56dp" android:layout_weight="1" android:text="✅ APROVAR"
-                android:background="#2E7D32" android:textColor="#FFFFFF" android:textSize="15sp"/>
-            <Button android:id="@+id/botao_rejeitado" android:layout_width="0dp"
-                android:layout_height="56dp" android:layout_weight="1" android:text="❌ REJEITAR"
-                android:background="#C62828" android:textColor="#FFFFFF" android:textSize="15sp"/>
+            <Button android:id="@+id/botao_aprovado"
+    android:layout_width="0dp"
+    android:layout_height="56dp"
+    android:layout_weight="1"
+    android:layout_marginHorizontal="4dp"
+    android:text="✅ APROVAR"
+    android:background="#2E7D32"
+    android:textColor="#FFFFFF"
+    android:textSize="15sp"/>
+
+<Button android:id="@+id/botao_rejeitado"
+    android:layout_width="0dp"
+    android:layout_height="56dp"
+    android:layout_weight="1"
+    android:layout_marginHorizontal="4dp"
+    android:text="❌ REJEITAR"
+    android:background="#C62828"
+    android:textColor="#FFFFFF"
+    android:textSize="15sp"/>
+            
         </LinearLayout>
 
     </LinearLayout>

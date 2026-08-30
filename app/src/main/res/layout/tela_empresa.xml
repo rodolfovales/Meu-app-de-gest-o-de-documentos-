@@ -31,7 +31,6 @@
         android:hint="Razão Social"
         android:layout_marginBottom="12dp"/>
 
-    <!-- Campos para upload dos documentos -->
     <Button
         android:id="@+id/btn_cnpj"
         android:layout_width="match_parent"

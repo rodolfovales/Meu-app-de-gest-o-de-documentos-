@@ -3,40 +3,29 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
+    android:padding="24dp"
     android:background="#F5F5F5">
 
-    <!-- Cabeçalho -->
-    <LinearLayout
+    <TextView
+        android:id="@+id/titulo_master"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="vertical"
-        android:padding="16dp"
-        android:background="#1565C0">
+        android:text="Painel Master - Documentos Recebidos"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:layout_marginBottom="16dp"/>
 
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="🔐 Painel Master"
-            android:textSize="22sp"
-            android:textStyle="bold"
-            android:textColor="#FFFFFF"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Empresas que enviaram documentos:"
+        android:textSize="15sp"
+        android:layout_marginBottom="8dp"/>
 
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Acompanhamento de Documentos"
-            android:textSize="14sp"
-            android:textColor="#E3F2FD"
-            android:layout_marginTop="4dp"/>
-    </LinearLayout>
-
-    <!-- Lista de Empresas -->
-    <ListView
+    <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/lista_empresas"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:divider="#E0E0E0"
-        android:dividerHeight="1dp"
-        android:padding="8dp"/>
+        android:layout_height="match_parent"/>
 
 </LinearLayout>

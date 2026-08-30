@@ -29,6 +29,8 @@
         <activity
     android:name=".TelaSenhaMaster"
     android:exported="false"/>
+        <activity android:name=".TelaLoginMaster" android:exported="false"/>
+        
         
         
 

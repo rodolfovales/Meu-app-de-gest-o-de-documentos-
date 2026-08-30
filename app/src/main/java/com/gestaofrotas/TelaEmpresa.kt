@@ -28,4 +28,3 @@
         Toast.makeText(this, "✅ Cadastro enviado com sucesso! Obrigado!", Toast.LENGTH_LONG).show()
         finish()
     }
-    

@@ -10,7 +10,7 @@
         android:id="@+id/titulo_master"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Painel Master - Documentos Recebidos"
+        android:text="Painel Master"
         android:textSize="22sp"
         android:textStyle="bold"
         android:gravity="center"
@@ -19,13 +19,8 @@
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Empresas que enviaram documentos:"
+        android:text="Empresas que enviaram documentos aparecerão aqui:"
         android:textSize="15sp"
         android:layout_marginBottom="8dp"/>
-
-    <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/lista_empresas"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"/>
 
 </LinearLayout>

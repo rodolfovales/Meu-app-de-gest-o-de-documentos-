@@ -20,7 +20,7 @@ class TelaLoginMaster : AppCompatActivity() {
 
     // 🔑 E-mails autorizados a acessar o Painel Master — adicione quantos quiser!
     private val emailsAutorizados = listOf(
-        "seuemail@gmail.com"  // ← TROQUE PELO SEU E-MAIL
+        "rodolfovales84@gmail.com"  // ← TROQUE PELO SEU E-MAIL
     )
 
     override fun onCreate(savedInstanceState: Bundle?) {

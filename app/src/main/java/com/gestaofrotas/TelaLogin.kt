@@ -3,6 +3,8 @@ package com.gestaofrotas
 import android.content.Intent
 import android.os.Bundle
 import android.widget.Button
+import android.widget.EditText
+import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 
 class TelaLogin : AppCompatActivity() {
@@ -19,8 +21,8 @@ class TelaLogin : AppCompatActivity() {
         }
 
         btnMaster.setOnClickListener {
-            val irParaMaster = Intent(this, PainelMaster::class.java)
-            startActivity(irParaMaster)
+            val irParaSenha = Intent(this, TelaSenhaMaster::class.java)
+            startActivity(irParaSenha)
         }
     }
 }

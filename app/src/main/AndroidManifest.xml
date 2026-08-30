@@ -26,6 +26,10 @@
         <activity
     android:name=".DetalhesEmpresa"
     android:exported="false"/>
+        <activity
+    android:name=".TelaSenhaMaster"
+    android:exported="false"/>
+        
         
 
     </application>

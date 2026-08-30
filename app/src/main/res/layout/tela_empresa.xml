@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:id="@+id/tela_empresa"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:padding="24dp"
-    android:background="#F8F9FA">
+    android:padding="20dp"
+    android:background="#F8F9FA"
+    android:scrollbars="vertical">
 
     <TextView
         android:layout_width="match_parent"
@@ -14,65 +14,113 @@
         android:textSize="24sp"
         android:textStyle="bold"
         android:gravity="center"
-        android:layout_marginBottom="24dp"/>
+        android:layout_marginBottom="20dp"/>
 
     <EditText
         android:id="@+id/et_cnpj"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="CNPJ"
+        android:hint="CNPJ da Empresa"
         android:inputType="text"
-        android:layout_marginBottom="12dp"/>
+        android:layout_marginBottom="10dp"/>
 
     <EditText
         android:id="@+id/et_razao_social"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:hint="Razão Social"
-        android:layout_marginBottom="12dp"/>
+        android:inputType="textPersonName"
+        android:layout_marginBottom="20dp"/>
 
+    <!-- Cartão CNPJ -->
     <Button
         android:id="@+id/btn_cnpj"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Anexar Cartão CNPJ"
-        android:layout_marginBottom="8dp"/>
+        android:text="📄 Anexar Cartão CNPJ"
+        android:layout_marginBottom="4dp"/>
+    <TextView
+        android:id="@+id/txt_cnpj"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Nenhum arquivo selecionado"
+        android:textSize="13sp"
+        android:textColor="#757575"
+        android:layout_marginBottom="12dp"/>
 
+    <!-- Contrato Social -->
     <Button
         android:id="@+id/btn_contrato_social"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Anexar Contrato Social"
-        android:layout_marginBottom="8dp"/>
+        android:text="📄 Anexar Contrato Social"
+        android:layout_marginBottom="4dp"/>
+    <TextView
+        android:id="@+id/txt_contrato_social"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Nenhum arquivo selecionado"
+        android:textSize="13sp"
+        android:textColor="#757575"
+        android:layout_marginBottom="12dp"/>
 
+    <!-- Documentos dos Sócios -->
     <Button
         android:id="@+id/btn_socios"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Anexar Documentos dos Sócios"
-        android:layout_marginBottom="8dp"/>
+        android:text="📄 Anexar Documentos dos Sócios"
+        android:layout_marginBottom="4dp"/>
+    <TextView
+        android:id="@+id/txt_socios"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Nenhum arquivo selecionado"
+        android:textSize="13sp"
+        android:textColor="#757575"
+        android:layout_marginBottom="12dp"/>
 
+    <!-- Comprovante de Endereço -->
     <Button
         android:id="@+id/btn_endereco"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Anexar Comprovante de Endereço"
-        android:layout_marginBottom="8dp"/>
+        android:text="📄 Anexar Comprovante de Endereço"
+        android:layout_marginBottom="4dp"/>
+    <TextView
+        android:id="@+id/txt_endereco"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Nenhum arquivo selecionado"
+        android:textSize="13sp"
+        android:textColor="#757575"
+        android:layout_marginBottom="12dp"/>
 
+    <!-- Faturamento 12 meses -->
     <Button
         android:id="@+id/btn_faturamento"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Anexar Faturamento 12 meses"
-        android:layout_marginBottom="16dp"/>
+        android:text="📄 Anexar Faturamento dos Últimos 12 Meses"
+        android:layout_marginBottom="4dp"/>
+    <TextView
+        android:id="@+id/txt_faturamento"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Nenhum arquivo selecionado"
+        android:textSize="13sp"
+        android:textColor="#757575"
+        android:layout_marginBottom="20dp"/>
 
+    <!-- Botão Enviar -->
     <Button
         android:id="@+id/botao_cadastrar"
         android:layout_width="match_parent"
         android:layout_height="56dp"
-        android:text="Enviar Cadastro"
+        android:text="✅ Enviar Cadastro Completo"
         android:background="#2196F3"
         android:textColor="#FFFFFF"
-        android:textSize="16sp"/>
+        android:textSize="16sp"
+        android:textStyle="bold"/>
 
 </LinearLayout>

@@ -7,6 +7,11 @@ import android.widget.EditText
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 
+btnMaster.setOnClickListener {
+    val irParaLogin = Intent(this, TelaLoginMaster::class.java)
+    startActivity(irParaLogin)
+}
+
 class TelaLogin : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)

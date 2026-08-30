@@ -1,27 +1,36 @@
 <?xml version="1.0" encoding="utf-8"?>
-<manifest xmlns:android="http://schemas.android.com/apk/res/android">
-
-    <uses-permission android:name="android.permission.INTERNET" />
-    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
-    <uses-permission android:name="android.permission.READ_MEDIA_IMAGES" />
-    <uses-permission android:name="android.permission.READ_MEDIA_DOCUMENTS" />
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.gestaofrotas">
 
     <application
         android:allowBackup="true"
-        android:label="Gestão Documentos Frotas"
+        android:icon="@mipmap/ic_launcher"
+        android:label="Gestão de Documentos Frotas"
         android:theme="@style/Theme.AppCompat.Light.NoActionBar">
 
-        <activity android:name=".TelaLogin" android:exported="true">
+        <!-- Tela de ABERTURA do App -->
+        <activity
+            android:name=".TelaLogin"
+            android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".PainelMaster" android:exported="false"/>
-        <activity android:name=".DetalhesEmpresa" android:exported="false"/>
-        <activity android:name=".TelaEmpresa" android:exported="false"/>
-        <activity android:name=".CadastroEmpresa" android:exported="false"/>
-        <activity android:name=".TelaDocumentosEmpresa" android:exported="false"/>
+
+        <!-- Demais telas -->
+        <activity
+            android:name=".TelaEmpresa"
+            android:exported="false"/>
+        <activity
+            android:name=".PainelMaster"
+            android:exported="false"/>
 
     </application>
+
+    <!-- Permissão para acessar arquivos do celular -->
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_MEDIA_IMAGES" />
+    <uses-permission android:name="android.permission.READ_MEDIA_DOCUMENTS" />
+
 </manifest>

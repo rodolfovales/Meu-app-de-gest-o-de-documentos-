@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/tela_empresa"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="24dp"
+    android:background="#F8F9FA">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Cadastro de Empresa"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:layout_marginBottom="24dp"/>
+
+    <EditText
+        android:id="@+id/et_cnpj"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="CNPJ"
+        android:inputType="text"
+        android:layout_marginBottom="12dp"/>
+
+    <EditText
+        android:id="@+id/et_razao_social"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Razão Social"
+        android:layout_marginBottom="12dp"/>
+
+    <!-- Campos para upload dos documentos -->
+    <Button
+        android:id="@+id/btn_cnpj"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Anexar Cartão CNPJ"
+        android:layout_marginBottom="8dp"/>
+
+    <Button
+        android:id="@+id/btn_contrato_social"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Anexar Contrato Social"
+        android:layout_marginBottom="8dp"/>
+
+    <Button
+        android:id="@+id/btn_socios"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Anexar Documentos dos Sócios"
+        android:layout_marginBottom="8dp"/>
+
+    <Button
+        android:id="@+id/btn_endereco"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Anexar Comprovante de Endereço"
+        android:layout_marginBottom="8dp"/>
+
+    <Button
+        android:id="@+id/btn_faturamento"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Anexar Faturamento 12 meses"
+        android:layout_marginBottom="16dp"/>
+
+    <Button
+        android:id="@+id/botao_cadastrar"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:text="Enviar Cadastro"
+        android:background="#2196F3"
+        android:textColor="#FFFFFF"
+        android:textSize="16sp"/>
+
+</LinearLayout>

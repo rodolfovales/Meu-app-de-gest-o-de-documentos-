@@ -3,7 +3,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:padding="24dp"
+    android:padding="16dp"
     android:background="#F5F5F5">
 
     <TextView
@@ -14,13 +14,14 @@
         android:textSize="22sp"
         android:textStyle="bold"
         android:gravity="center"
+        android:padding="16dp"
+        android:background="#2196F3"
+        android:textColor="#FFFFFF"
         android:layout_marginBottom="16dp"/>
 
-    <TextView
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recycler_empresas"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Empresas que enviaram documentos aparecerão aqui:"
-        android:textSize="15sp"
-        android:layout_marginBottom="8dp"/>
+        android:layout_height="match_parent"/>
 
 </LinearLayout>

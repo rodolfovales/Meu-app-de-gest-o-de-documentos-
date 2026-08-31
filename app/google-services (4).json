@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "171630398452",
+    "project_id": "gestaodocumentos-e92f8",
+    "storage_bucket": "gestaodocumentos-e92f8.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:171630398452:android:6e18fe107d529086c8c7a1",
+        "android_client_info": {
+          "package_name": "com.gestaofrotas"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "171630398452-5qoftbbh93sih22hnm01rme199ednttp.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBXeyXpU6a94-MgkfVxqiXxG4S1UMAcmgE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "171630398452-5qoftbbh93sih22hnm01rme199ednttp.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
